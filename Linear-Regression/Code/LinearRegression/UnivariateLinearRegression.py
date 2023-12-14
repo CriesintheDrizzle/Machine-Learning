@@ -1,3 +1,6 @@
+"""
+单变量线性回归
+"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
