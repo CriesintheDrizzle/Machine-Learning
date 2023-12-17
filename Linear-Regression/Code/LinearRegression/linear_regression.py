@@ -2,7 +2,8 @@
 基本线性回归模型实现
 """
 import numpy as np
-from utils.features import prepare_for_training # 预处理模块
+# from utils.features import prepare_for_training # 预处理模块
+from utils.features import prepare_for_training
 
 class LinearRegression:
 
