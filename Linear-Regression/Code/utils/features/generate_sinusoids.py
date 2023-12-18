@@ -1,6 +1,6 @@
 import numpy as np
 
-
+# 非线性变换
 def generate_sinusoids(dataset, sinusoid_degree):
     """
     sin(x).

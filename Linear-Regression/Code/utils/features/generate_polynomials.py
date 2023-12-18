@@ -3,7 +3,7 @@
 import numpy as np
 from .normalize import normalize
 
-
+# 多项式变化
 def generate_polynomials(dataset, polynomial_degree, normalize_data=False):
     """变换方法：
     x1, x2, x1^2, x2^2, x1*x2, x1*x2^2, etc.

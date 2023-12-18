@@ -3,7 +3,7 @@
 import numpy as np
 
 
-def normalize(features):
+def normalize(features): # (x-μ) / std       (x-μ)将数据以0为中心进行对称；std讲所有特征的浮动范围相差不大
 
     features_normalized = np.copy(features).astype(float)
 

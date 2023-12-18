@@ -1,3 +1,6 @@
+"""
+非线性回归
+"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -14,7 +17,7 @@ data.head(10)
 plt.plot(x, y)
 plt.show()
 
-num_iterations = 50000  
+num_iterations = 1000 # 50000  
 learning_rate = 0.02  
 polynomial_degree = 15  
 sinusoid_degree = 15  

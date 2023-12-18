@@ -1,3 +1,6 @@
+"""
+多变量线性回归
+"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,7 +10,7 @@ import plotly.graph_objs as go
 plotly.offline.init_notebook_mode()
 from linear_regression import LinearRegression
 
-data = pd.read_csv('../data/world-happiness-report-2017.csv')
+data = pd.read_csv('./data/world-happiness-report-2017.csv')
 
 train_data = data.sample(frac=0.8)
 test_data = data.drop(train_data.index)
@@ -23,7 +26,7 @@ y_train = train_data[[output_param_name]].values
 x_test = test_data[[input_param_name_1, input_param_name_2]].values
 y_test = test_data[[output_param_name]].values
 
-# Configure the plot with training dataset.
+# 绘制训练集散点图
 plot_training_trace = go.Scatter3d(
     x=x_train[:, 0].flatten(),
     y=x_train[:, 1].flatten(),
@@ -40,7 +43,7 @@ plot_training_trace = go.Scatter3d(
     }
 )
 
-
+# 绘制测试集散点图
 plot_test_trace = go.Scatter3d(
     x=x_test[:, 0].flatten(),
     y=x_test[:, 1].flatten(),
