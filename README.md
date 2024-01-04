@@ -6,4 +6,5 @@ My Machine learning note and code
 * MultivariateLinearRegression.py —— Implementation of Multivariate Linear Regression Model
 * Non-linearRegression.py —— Implementation of Nonlinear Regression Model
 
-
+## 二、Model evaluation methods
+* Classification model evaluation methods
