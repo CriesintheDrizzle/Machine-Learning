@@ -27,12 +27,15 @@ print(listDistance)
 listDistance.sort()
 print(listDistance)
 # sys.exit()
-weight = [1 / (i[0] + 0.001) for i in listDistance[:K]]
-print(weight)
+# 取出前k个邻居
+weight = [1 / (i[0] + 0.001) for i in listDistance[:K]] # + 0.001防止距离为0
+print(weight) # 这里的权重和不为1
+print(sum(weight))
 # sys.exit()
 # weight /= sum(weight)
 # print(weight)
 # sys.exit()
+# 将标签设置为-1、1，可用如下方法进行分类，看所有标签乘权重值求和，看最后结果是否大于0
 pre = -1 if sum([(1 / (i[0] + 0.001)) / sum(weight) * i[1] for i in listDistance[:K]]) < 0 else 1
 print(pre)
 
