@@ -106,8 +106,5 @@ class LinearRegression:
         
         predictions = LinearRegression.hypothesis(data_processed,self.theta)
         
-        return predictions
-        
-        
-        
+        return predictions   
         
