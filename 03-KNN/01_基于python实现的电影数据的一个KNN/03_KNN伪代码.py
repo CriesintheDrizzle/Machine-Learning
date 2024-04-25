@@ -23,7 +23,7 @@ class KNN():
 
     def fit(self, x, y):
         '''
-        fit 训练模型 保存训练数据
+        fit 训练模型 只进行保存训练数据
         如果with_kd_tree=True 则训练构建kd_tree
         :param x:训练数据的特征矩阵
         :param y:训练数据的label
@@ -108,8 +108,8 @@ class KNN():
     def socre(self, x, y):
         '''
         模型预测得分：我们使用准确率 accuracy_score
-        :param x:
-        :param y:
+        :param x:特征矩阵
+        :param y:真实标签
         :return:
         '''
         y_true = np.array(y)
